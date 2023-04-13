@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d173ce87;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+  flex-direction: column;
+  font-family: "Source Sans Pro", "sans-serif";
+  color: white;
+  margin-top: 120px;
+  height: 400px;
+  width: 100%;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.profileName {
+  font-weight: normal;
+}
