@@ -1,4 +1,4 @@
-.new-tweet {
+.newTweet {
   display: flex; 
   align-items: center;
 }
@@ -28,7 +28,7 @@ button {
   justify-content: space-between;
 }
 
-#tweet-text {
+#tweetText {
   border-style: hidden;
   border-bottom: 5px solid  #545149; 
   background-color: #f4f1ec;

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#tweet-text").on("keyup", function (event) {
+  $("#tweetText").on("keyup", function() {
     const maxChar = 140;
     //counts characters from keyup
     const currentCount = $(this).val().length;
@@ -9,6 +9,5 @@ $(document).ready(function() {
     if (remainingCharCount < 0) {
       counter.css("color", "red");
     }
-  
   });
 });
