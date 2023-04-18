@@ -5,7 +5,7 @@
 
 form {
   display: flex; 
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 button {
@@ -29,13 +29,17 @@ button {
 }
 
 #tweetText {
-  border-style: hidden;
+  outline: none;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
   border-bottom: 5px solid  #545149; 
   background-color: #f4f1ec;
   font-weight: 600;
   color: #545149;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
+  resize: none;
 }
 
 label {

@@ -1,7 +1,8 @@
-.tweetContainer {
+section#tweetsContainer {
   display:flex;
   background-color:#f4f1ec;
   font-family: "Source Sans Pro", "sans-serif";
+  flex-direction: column;
 }
 
 .tweet {
