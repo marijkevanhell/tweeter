@@ -1,11 +1,13 @@
 .newTweet {
   display: flex; 
   align-items: center;
+  width: 90%
 }
 
 form {
   display: flex; 
   flex-direction: column;
+  width: 100%
 }
 
 button {
@@ -15,6 +17,10 @@ button {
   background-color: #4056A1;
   color: #FFFFFF;
   border: none;
+}
+
+button:hover {
+  border: 2px solid rgb(71, 71, 246);
 }
 
 .counter {

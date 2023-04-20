@@ -3,6 +3,7 @@ section#tweetsContainer {
   background-color:#f4f1ec;
   font-family: "Source Sans Pro", "sans-serif";
   flex-direction: column;
+  width: 90%
 }
 
 .tweet {
