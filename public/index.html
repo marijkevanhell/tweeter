@@ -55,6 +55,18 @@
       <!--HTML for making new tweet-->
       <section class="newTweet">
         <form action="/tweets" method="POST" id="newTweetForm">
+          <section id="errorMsg">
+            <span id="errorMsgEmpty" class="errorMsg">
+              <i class="fas fa-exclamation-triangle" ></i>
+              Please enter text before submitting new tweet!
+              <i class="fas fa-exclamation-triangle" ></i>
+            </span>
+            <span id="errorMsgLong" class="errorMsg">
+              <i class="fas fa-exclamation-triangle" ></i>
+              Please remove text to be less than or equal to 140 characters!
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+          </section>
           <label for="tweetText">What are you humming about?</label>
           <textarea name="text" id="tweetText"></textarea>
           <hr style=>
