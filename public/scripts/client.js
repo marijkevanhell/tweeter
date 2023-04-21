@@ -1,3 +1,10 @@
+//security to re-encode unsafe text
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 $(document).ready(function() {
 //tweet template
 const createTweetElement = function(tweetData) {
@@ -13,7 +20,7 @@ const createTweetElement = function(tweetData) {
               </div>
             </header>
             <div class="tweetMsg">
-              ${tweetData.content.text}
+            ${escape(tweetData.content.text)}
             </div>
             <footer class="tweetFooter">
               <span class="tweetDate">${timeago.format(tweetData.created_at)}</span>
