@@ -43,7 +43,7 @@ button:hover {
   background-color: #f4f1ec;
   font-weight: 600;
   color: #545149;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "sans-serif";
   font-size: 18px;
   resize: none;
 }
@@ -53,3 +53,19 @@ label {
   margin-top:20px;
 }
 
+.errorMsg {
+  display: flex;
+  border: 3px solid red;
+  justify-content: space-around;
+  color: red;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Source Sans Pro", "sans-serif";
+  margin-top: 20px
+}
+
+.fa-exclamation-triangle {
+margin-left: 5px;
+margin-right: 5px;
+color: red
+}

@@ -6,6 +6,11 @@ const escape = function (str) {
 };
 
 $(document).ready(function() {
+
+  //hides error msgs
+$("#errorMsgEmpty").hide();
+$("#errorMsgLong").hide();
+
 //tweet template
 const createTweetElement = function(tweetData) {
   let $tweet = $(`
@@ -64,17 +69,21 @@ const submitNewTweet = function (textarea) {
 $("form").submit((event) => {
   event.preventDefault();
   const maxCharLength = 140;
-    const inputLength = $(this).find("#tweetText").val().length;
+  const inputLength = $(this).find("#tweetText").val().length;
+  $("#errorMsgEmpty").slideUp("slow");
+  $("#errorMsgLong").slideUp("slow");
     if (!inputLength) {
-      return alert("Blank tweet, please add text");
+      $("#errorMsgEmpty").slideDown("slow");
+      $("#errorMsgLong").hide();
     } else if (inputLength - maxCharLength > 0) {
-      return alert("Max 140 characters, please remove characters!");
+      $("#errorMsgLong").slideDown("slow");
+      $("#errorMsgEmpty").hide();
     } else {
       const newTweet = $(this).serialize();
       $.post("/tweets/", newTweet);
     }
-    submitNewTweet ($("#tweetText"));
 });
+submitNewTweet ($("#tweetText"));
 
 //displays tweets on page
 const loadTweets = () => {
