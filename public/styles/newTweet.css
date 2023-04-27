@@ -1,5 +1,5 @@
 .newTweet {
-  display: flex; 
+  display: flex;
   align-items: center;
   width: 90%
 }
@@ -20,7 +20,7 @@ button {
 }
 
 button:hover {
-  border: 2px solid rgb(71, 71, 246);
+  border: 0.15em solid rgb(71, 71, 246);
 }
 
 .counter {
@@ -39,33 +39,40 @@ button:hover {
   border-top: hidden;
   border-left: hidden;
   border-right: hidden;
-  border-bottom: 5px solid  #545149; 
+  border-bottom: 0.25em solid  #545149; 
   background-color: #f4f1ec;
   font-weight: 600;
   color: #545149;
   font-family: "Source Sans Pro", "sans-serif";
-  font-size: 18px;
+  font-size: 0.75em;
   resize: none;
 }
 
 label {
   color: #8a8579;
-  margin-top:20px;
+  margin-top:1em;
 }
 
 .errorMsg {
   display: flex;
-  border: 3px solid red;
+  border: 0.25em solid red;
   justify-content: space-around;
   color: red;
-  padding: 20px;
-  font-size: 20px;
+  padding: 1em;
+  font-size: 1em;
   font-family: "Source Sans Pro", "sans-serif";
-  margin-top: 20px
+  margin-top: 1em
 }
 
 .fa-exclamation-triangle {
-margin-left: 5px;
-margin-right: 5px;
+margin-left: 1em;
+margin-right: 1em;
 color: red
+}
+
+/*for desktop size*/
+@media (min-width: 1024px) {
+  .newTweet{
+    margin-top: 6em;
+  }
 }

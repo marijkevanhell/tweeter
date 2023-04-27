@@ -7,17 +7,17 @@ section#tweetsContainer {
 }
 
 .tweet {
-  border: 3px solid #545149;
-  margin-top: 50px;
-  padding: 20px;
+  border: 0.15em solid #545149;
+  margin-top: 2em;
+  padding: 0.75em;
 }
 
 .tweetHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 1em;
+  font-size: 0.75em;
   align-items: center;
 }
 
@@ -28,10 +28,8 @@ section#tweetsContainer {
 }
 
 .userIcon {
-  margin-left: 10px;
-  margin-right: 10px;
-  max-width: 80px;
-  max-height: 80px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .userName {
@@ -39,26 +37,25 @@ section#tweetsContainer {
 }
 
 .tweetMsg {
-  font-size: 18px;
+  font-size: 1.0em;
 }
 
 .tweetFooter {
   border-top-style:solid;
-  border-width: 3px;
+  border-width: 0.25em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 7px;
-  margin-top: 10px;
-  font-size: 15px;
+  padding: 0.75em;
+  margin-top: 1em;
+  font-size: 0.70em;
 }
 
 .tweet:hover {
-  box-shadow: 10px 10px #dbd6d6;
+  box-shadow: 0.5em 0.5em #dbd6d6;
 }
 
 .tweetReactions {
-  padding: 5px;
   color: #4056A1;
 }
 

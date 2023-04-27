@@ -82,8 +82,9 @@ $("form").submit((event) => {
       const newTweet = $(this).serialize();
       $.post("/tweets/", newTweet);
     }
+    submitNewTweet ($("#tweetText"));
 });
-submitNewTweet ($("#tweetText"));
+
 
 //displays tweets on page
 const loadTweets = () => {
