@@ -7,11 +7,15 @@
   flex-direction: column;
   font-family: "Source Sans Pro", "sans-serif";
   color: white;
-  margin-top: 5em;
-  height: 18em;
+  height: 400px;
   width: 100%;
+  margin-top: 5em;
   margin-left: 2em;
   margin-right: 2em;
+}
+
+.userProfilePic {
+  margin-top:1em
 }
 
 .bold {
@@ -22,9 +26,12 @@
   font-weight: normal;
 }
 
+/* For desktop size */
 @media (min-width: 1024px) {
   .profile{
     margin-bottom: 18em;
+    margin-top: 7em;
+    align-self: start;
   }
 }
 

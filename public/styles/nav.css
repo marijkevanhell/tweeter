@@ -11,7 +11,7 @@ nav {
   top: 0;
   left: 0;
   font-size: 1.5em;
-  height: 14.55%;
+  height: 120px;
   width: 100%
 }
 
@@ -37,11 +37,13 @@ nav {
   margin-bottom: 0.5em;
 }
 
-/*for desktop size*/
+.fa-solid {
+  color: #ff0000
+}
+
 @media (min-width: 1024px) {
   nav{
     background-color:#4056A1 ;
     background-image: none;
-
   }
 }

@@ -30,7 +30,8 @@ main {
   flex-direction: column;
   font-family: "Source Sans Pro", "sans-serif";
   align-items: center;
-  width: 100%;
+  width: 90%;
+  margin: 5em;
 }
 
 /*
@@ -42,7 +43,4 @@ main {
     display: flex;
     flex-direction: row;
   }
-
- 
-
 }
